@@ -8,6 +8,7 @@ public class FeeProcessorFaasApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FeeProcessorFaasApplication.class, args);
+		System.out.println("INICIOU O CÒDIGO");
 	}
 
 }
