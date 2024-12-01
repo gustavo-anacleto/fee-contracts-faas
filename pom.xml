@@ -8,8 +8,8 @@
         <version>3.3.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.fee-processor-faas</groupId>
-    <artifactId>fee-processor-faas</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>fee_processor_faas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>fee-processor-faas</name>
     <description>Demo project for Spring Boot</description>

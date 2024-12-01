@@ -1,4 +1,4 @@
-package com.fee_processor_faas.fee_processor_faas;
+package com.example.fee_processor_faas;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.events.SQSEvent;

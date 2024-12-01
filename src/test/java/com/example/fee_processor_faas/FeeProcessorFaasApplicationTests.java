@@ -1,4 +1,4 @@
-package com.fee_processor_faas.fee_processor_faas;
+package com.example.fee_processor_faas;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
