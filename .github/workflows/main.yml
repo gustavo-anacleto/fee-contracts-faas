@@ -32,17 +32,9 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: eu-north-1
 
-    - name: Verificar diretório de trabalho
-      run: pwd
-
-    - name: Criar o arquivo ZIP
-      run: zip -r fee-processor-faas.zip target/fee-processor-faas.jar
-    
-    - name: Verificar o arquivo ZIP
-      run: ls fee-processor-faas.zip
-    
     - name: Deploy Lambda function
       run: |
+        zip -r fee-processor-faas.zip target/fee-processor-faas.jar
         aws lambda update-function-code --function-name fee-processor-faas --zip-file fileb://fee-processor-faas.zip
 
         
