@@ -24,13 +24,6 @@ jobs:
         
     - name: Build with Maven
       run: mvn clean package
-
-    - name: Set up AWS CLI
-      run: |
-        curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-        unzip awscliv2.zip
-        sudo ./aws/install
-      continue-on-error: false
     
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
